@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Type({text}) {
+function Type({text, all}) {
   return (
     <div>{text}</div>
   )

@@ -11,6 +11,9 @@
     margin: 0 25px;
     text-decoration: none;
 }
+.navBar > a:hover{
+    text-decoration: underline;
+}
 .navBar > a:nth-child(1){
     color: rgb(255 93 93);
 }
