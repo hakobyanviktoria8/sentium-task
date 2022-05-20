@@ -1,0 +1,25 @@
+.navBar {
+    border-bottom: 2px solid rgb(241, 241, 241);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar > a {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 25px;
+    text-decoration: none;
+}
+.navBar > a:nth-child(1){
+    color: rgb(255 93 93);
+}
+.navBar > a:nth-child(2){
+    color: #00b300;
+}
+.navBar > a:nth-child(3){
+    color: orange;
+}
+.navBar > a:nth-child(4){
+    color: gray;
+}
