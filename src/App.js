@@ -7,9 +7,6 @@ import TotalInfo from './components/TotalInfo';
 
 function App() {
   const[allData, setAllData]= useState("")
-  let location = useLocation();
-  let typeName = location.pathname.split("/")[1]
-  let typeNameToday = "today".concat(typeName[0].toUpperCase().concat(typeName.slice(1)))
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
@@ -18,11 +15,6 @@ function App() {
     .catch((error) => console.log("Can’t access response.", error.message))
   },[])
 
-  console.log(allData)
-  console.log("todayCases",
-    "today".concat(typeName[0].toUpperCase().concat(typeName.slice(1)))
-  )
-
   return (
     <div className="App">
 
@@ -30,12 +22,7 @@ function App() {
       <NavBar />
 
       {/* total info give type location path */}
-      <TotalInfo 
-        type={typeName} 
-        allCase={allData[typeName]} 
-        todayCase={allData[typeNameToday]}
-        updated={allData?.updated}
-      />
+      <TotalInfo allData={allData} />
 
       <Routes>
         <Route path="/" element={<Type text="cases"/>} />
