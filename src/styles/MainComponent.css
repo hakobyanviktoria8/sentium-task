@@ -1,0 +1,36 @@
+.mainComponent{
+    border: 1px solid rgb(194 194 194);
+    width: 65%;
+    margin-top: 10px;
+    height: calc(100vh - 160px);
+    overflow: auto; 
+}
+.mainComponent > h2{
+    text-align: center;
+    margin-top: 30px;
+}
+.mainComponent > table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.mainComponent .tableHeader{
+    height: 50px;
+    padding-bottom: 5px;
+}
+.mainComponent .tableHeader th{
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    background: #f1f1f1;
+    text-align: left;
+    padding-left: 10px;
+}
+.mainComponent .flag{
+    width: 40px;
+}
+.mainComponent tbody td{
+    padding-left: 10px;
+}
+tbody tr:nth-of-type(even){
+    background-color: rgb(247, 247, 247);
+}

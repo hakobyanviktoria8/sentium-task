@@ -5,9 +5,9 @@ import "./../styles/TotalInfo.css"
 function TotalInfo({allData}) {
     let location = useLocation();
     let typeName = location.pathname.split("/")[1]
-    let typeNameToday = "today".concat(typeName[0].toUpperCase().concat(typeName.slice(1)))
+    let typeNameToday = "today".concat(typeName[0]?.toUpperCase().concat(typeName.slice(1)))
     let day = new Date(allData?.updated)
-    let updatedDate= `${day.getDate()} / ${day.getMonth()+1} / ${day.getFullYear()}`
+    let updatedDate= `${day.getDate()}/${day.getMonth()+1}/${day.getFullYear()}`
   
   return (
     <div className='totalInfo'>

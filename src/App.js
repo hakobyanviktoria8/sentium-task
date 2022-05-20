@@ -1,8 +1,8 @@
-import React,{useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/App.css';
 import { Routes, Route, useLocation  } from "react-router-dom";
 import NavBar from './components/NavBar';
-import Type from './components/Type';
+import MainComponent from './components/MainComponent';
 import TotalInfo from './components/TotalInfo';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   },[])
 
   return (
-    <div className="App">
+    <div className="app">
 
       {/* dinamic navBar,change path selected value */}
       <NavBar />
@@ -25,11 +25,11 @@ function App() {
       <TotalInfo allData={allData} />
 
       <Routes>
-        <Route path="/" element={<Type text="cases"/>} />
-        <Route path="cases" element={<Type text="cases"/>} />
-        <Route path="recovered" element={<Type text="recovered"/>} />
-        <Route path="active" element={<Type text="active"/>} />
-        <Route path="deaths" element={<Type text="deaths"/>} />
+        <Route path="/" element={<MainComponent text="cases"/>} />
+        <Route path="cases" element={<MainComponent text="cases"/>} />
+        <Route path="recovered" element={<MainComponent text="recovered"/>} />
+        <Route path="active" element={<MainComponent text="active"/>} />
+        <Route path="deaths" element={<MainComponent text="deaths"/>} />
       </Routes>
     </div>
   );
