@@ -6,12 +6,14 @@
     font-size: 16px;
     color: rgb(85, 85, 85);
     border-bottom: 2px solid rgb(241, 241, 241);
-}
-.totalInfo > p{
-    margin: 0 10px;
-    width: 200px;
-    border-right: 2px solid rgb(241, 241, 241);
-}
-.totalInfo > p:last-child{
-    border: none;
+
+    > p{
+        margin: 0 10px;
+        width: 200px;
+        border-right: 2px solid rgb(241, 241, 241);
+        
+        &:last-child{
+            border: none;
+        }
+    }
 }

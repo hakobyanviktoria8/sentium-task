@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation  } from "react-router-dom";
-import "./../styles/TotalInfo.css"
+import "./../styles/TotalInfo.scss"
 
 function TotalInfo({allData}) {
     let location = useLocation();

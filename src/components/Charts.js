@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LineChart from './LineChart'
 import PieChart from './PieChart'
 import { useLocation  } from "react-router-dom";
-import "./../styles/Charts.css"
+import "./../styles/Charts.scss"
 
 function Charts() {    
     const[chartsAllData, setChartsAllData] = useState({})

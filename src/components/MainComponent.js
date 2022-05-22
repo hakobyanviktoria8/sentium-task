@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import "./../styles/MainComponent.css"
+import "./../styles/MainComponent.scss"
 import { useLocation  } from "react-router-dom";
 import Charts from './Charts';
 
