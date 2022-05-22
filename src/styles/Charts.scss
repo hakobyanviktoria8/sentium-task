@@ -17,3 +17,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .chartsWrapper{
+      flex-direction: column;
+
+      > div{
+        width: 100%;
+
+        &:last-child{
+            width: 60%;
+            margin: 0 auto;
+            border-left: none;
+        }
+      }
+  }
+}
+
+@media (max-width: 426px) {
+    .chartsWrapper > div:last-child{
+        width: 100%;
+    }
+}

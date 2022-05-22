@@ -32,3 +32,9 @@
         }
     }
 }
+
+@media (max-width: 426px) {
+    .navBar > a{
+        margin: 0 5px;
+    }
+}
