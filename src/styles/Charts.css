@@ -4,6 +4,7 @@
     margin: 30px 0;
     display: flex;
     height: 500px;
+    margin-bottom: 50px;
 }
 .chartsWrapper > div{    
     height: 100%;
@@ -11,6 +12,6 @@
     padding: 20px;
 }
 .chartsWrapper > div:last-child{
-    width: 35%;
+    width: 33%;
     border-left: 1px solid rgb(194 194 194);
 }

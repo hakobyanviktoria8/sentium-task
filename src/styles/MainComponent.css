@@ -1,6 +1,3 @@
-.mainContentWrapper{
-    /* display: flex; */
-}
 .mainComponent{
     border: 1px solid rgb(194 194 194);
     width: 100%;
@@ -8,9 +5,11 @@
     height: calc(100vh - 160px);
     overflow: auto; 
 }
-.mainComponent > h2{
+.mainContentWrapper > h2,
+.mainComponent > h2 {
     text-align: center;
-    margin-top: 30px;
+    margin: 40px;
+    color: gray;
 }
 .mainComponent > table {
     border-collapse: collapse;

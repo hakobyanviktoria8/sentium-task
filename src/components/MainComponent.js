@@ -29,6 +29,14 @@ function MainComponent() {
 
   return (
     <div className='mainContentWrapper'>
+      {/* Charts Line and Pie */}
+      <div className='chartsWrapper'>
+        <Charts/>
+      </div>
+
+      <h2>Covid-19 Table Data</h2>
+
+      {/* table data */}
       <div className='mainComponent'>
         {
         !allCountries ? 
@@ -63,9 +71,6 @@ function MainComponent() {
           </tbody>
         </table>
         }
-      </div>
-      <div className='chartsWrapper'>
-        <Charts/>
       </div>
     </div>
   )
