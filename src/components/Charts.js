@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import LineChart from './LineChart'
+import PieChart from './PieChart'
 import { useLocation  } from "react-router-dom";
+import "./../styles/Charts.css"
 
 function Charts() {    
     const[chartsAllData, setChartsAllData] = useState({})
@@ -16,12 +18,12 @@ function Charts() {
     let typeName = location.pathname.split("/")[1] || "cases"
     const labels = Object.keys({...chartsAllData[typeName]});
     const numberData = Object.values({...chartsAllData[typeName]})
-    console.log(chartsAllData)
 
   return (
-    <div className='charts'>
+    <>
         <LineChart labels={labels} numberData={numberData} typeName={typeName}/>
-    </div>
+        <PieChart />
+    </>
   )
 }
 

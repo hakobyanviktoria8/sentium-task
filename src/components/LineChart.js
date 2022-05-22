@@ -58,7 +58,9 @@ function LineChart({labels, numberData, typeName}) {
     };
 
   return (
-    <Line options={options} data={data} />
+      <div className='lineChart'>
+        <Line options={options} data={data} />
+      </div>
   )
 }
 
