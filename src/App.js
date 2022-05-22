@@ -9,10 +9,13 @@ function App() {
   const[allData, setAllData]= useState("")
 
   useEffect(() => {
-    fetch("https://disease.sh/v3/covid-19/all")
-    .then(response => response.json())
-    .then(data => setAllData(data))
-    .catch((error) => console.log("Can’t access response.", error.message))
+    const getAllData = async () => {
+      await fetch("https://disease.sh/v3/covid-19/all")
+      .then(response => response.json())
+      .then(data => setAllData(data))
+      .catch((error) => console.log("Can’t access response.", error.message))
+    }
+    getAllData();
   },[])
 
   return (

@@ -1,3 +1,6 @@
+.mainContentWrapper{
+    display: flex;
+}
 .mainComponent{
     border: 1px solid rgb(194 194 194);
     width: 65%;
@@ -37,4 +40,16 @@ tbody tr:nth-of-type(even){
 .mainComponent .tableHeader .active{
     color: blue;
     background: #e4e4e4;
+}
+
+/* charts style*/
+.chartsWrapper{
+    width: 35%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.chartsWrapper > div{    
+    min-height: 250px;
+    border-bottom: 1px solid rgb(194 194 194);
 }
