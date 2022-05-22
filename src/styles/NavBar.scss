@@ -4,6 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-color: rgb(247, 247, 247);
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     > a {
         font-size: 24px;
