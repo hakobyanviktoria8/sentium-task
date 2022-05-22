@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sentium-task/static/css/main.6fb8d4f7.css",
-    "main.js": "/sentium-task/static/js/main.6f989a8d.js",
+    "main.js": "/sentium-task/static/js/main.f456b541.js",
     "index.html": "/sentium-task/index.html",
     "main.6fb8d4f7.css.map": "/sentium-task/static/css/main.6fb8d4f7.css.map",
-    "main.6f989a8d.js.map": "/sentium-task/static/js/main.6f989a8d.js.map"
+    "main.f456b541.js.map": "/sentium-task/static/js/main.f456b541.js.map"
   },
   "entrypoints": [
     "static/css/main.6fb8d4f7.css",
-    "static/js/main.6f989a8d.js"
+    "static/js/main.f456b541.js"
   ]
 }
