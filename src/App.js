@@ -29,6 +29,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<MainComponent text="cases"/>} />
+        <Route path="/sentium-task/" element={<MainComponent text="cases"/>} />
         <Route path="cases" element={<MainComponent text="cases"/>} />
         <Route path="recovered" element={<MainComponent text="recovered"/>} />
         <Route path="active" element={<MainComponent text="active"/>} />

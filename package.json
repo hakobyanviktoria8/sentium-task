@@ -2,6 +2,7 @@
   "name": "sentium-task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://hakobyanviktoria8.github.io/sentium-task",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -20,6 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,6 +48,7 @@
   "devDependencies": {
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "gh-pages": "^4.0.0",
     "jest-watch-typeahead": "^0.6.5"
   }
 }
