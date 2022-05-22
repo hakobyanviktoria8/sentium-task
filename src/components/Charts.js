@@ -16,6 +16,7 @@ function Charts() {
     
     let location = useLocation();
     let typeName = location.pathname.split("/")[1] || "cases"
+    if(typeName === "sentium-task"){ typeName= "cases" }
     const labels = Object.keys({...chartsAllData[typeName]});
     const numberData = Object.values({...chartsAllData[typeName]})
 
